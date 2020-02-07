@@ -56,7 +56,8 @@ public class MainClass {
 			event.getRegistry().registerAll
 			(
 					ItemList.tutorial_item = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(loc("tutorial_item")),
-					ItemList.test_block_item = new BlockItem(BlockList.test_block,new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.test_block.getRegistryName())
+					ItemList.test_block_item = new BlockItem(BlockList.test_block,new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.test_block.getRegistryName()),
+					ItemList.anti_ice_item = new BlockItem(BlockList.anti_ice,new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.anti_ice.getRegistryName())
 			);
 			logger.info("Registered Items");
 		}
@@ -70,7 +71,12 @@ public class MainClass {
 							.slipperiness(1000)
 							.hardnessAndResistance(2.0f, 3.0f)
 							.sound(SoundType.LADDER)
-							).setRegistryName(loc("test_block"))
+							).setRegistryName(loc("test_block")),
+					BlockList.anti_ice = new Block(Block.Properties.create(Material.IRON)
+							.slipperiness(-1000)
+							.hardnessAndResistance(2.0f, 3.0f)
+							.sound(SoundType.LADDER)
+							).setRegistryName(loc("anti_ice"))
 			);
 			logger.info("Registered Items");
 		}

@@ -7,4 +7,6 @@ public class ItemList
 	public static Item tutorial_item;
 	
 	public static Item test_block_item;
+	
+	public static Item anti_ice_item;
 }
