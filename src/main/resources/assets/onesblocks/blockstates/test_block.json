@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "onesblocks:block/test_block" }
+    }
+}
